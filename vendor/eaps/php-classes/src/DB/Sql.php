@@ -1,19 +1,17 @@
 <?php
 
-
 namespace DB;
-
 
 class Sql
 {
-    const HOSTNAME = "";
-    const USERNAME ="";
-    const PASSWORD = "";
-    const DBNAME = "";
+    const HOSTNAME  =   "scenfe.mysql.dbaas.com.br";
+    const USERNAME  =   "scenfe";
+    const PASSWORD  =   "lemi2503";
+    const DBNAME    =   "scenfe";
 
     private $conn;
 
-    publuc function __construct()
+    public function __construct()
     {
         $this->conn = new \PDO(
           "mysql:dbname=".Sql::DBNAME.";host=".Sql::HOSTNAME, Sql::USERNAME, Sql::PASSWORD
