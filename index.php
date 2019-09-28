@@ -1,6 +1,7 @@
 <?php
 require_once ("vendor/autoload.php");
 
+use \Slim\Slim;
 use DB\Sql;
 use eaps\Page;
 use eaps\PageAdmin;
