@@ -1,5 +1,6 @@
 <?php
 
+
 use Rain\Tpl;
 
 class Page
