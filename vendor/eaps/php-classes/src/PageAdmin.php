@@ -1,5 +1,5 @@
 <?php
-
+namespace eaps;
 use Rain\Tpl;
 
 class PageAdmin extends Page

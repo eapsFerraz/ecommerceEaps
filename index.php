@@ -2,7 +2,8 @@
 require_once ("vendor/autoload.php");
 
 use DB\Sql;
-
+use eaps\Page;
+use eaps\PageAdmin;
 
 $app = new \Slim\Slim();
 $app->config('debug', true);

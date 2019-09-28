@@ -1,5 +1,5 @@
 <?php
-
+namespace eaps;
 use Rain\Tpl;
 
 class Page
