@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "": "vendor\\eaps\\php-classes\\src"
+      "eaps\\": "vendor\\eaps\\php-classes\\src"
     }
   }
 }
