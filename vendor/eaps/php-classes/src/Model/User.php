@@ -3,7 +3,7 @@
 
 namespace eaps\Model;
 
-use DB\Sql;
+use \DB\Sql;
 use \eaps\Model;
 
 class User extends Model
