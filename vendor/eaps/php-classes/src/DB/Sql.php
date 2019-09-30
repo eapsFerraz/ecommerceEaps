@@ -1,6 +1,6 @@
 <?php
 
-namespace \DB;
+namespace eaps\DB;
 
 class Sql
 {
@@ -13,7 +13,7 @@ class Sql
 
     public function __construct()
     {
-        $this->conn = new PDO(
+        $this->conn = new \PDO(
           "mysql:dbname=".Sql::DBNAME.";host=".Sql::HOSTNAME, Sql::USERNAME, Sql::PASSWORD
         );
     }
