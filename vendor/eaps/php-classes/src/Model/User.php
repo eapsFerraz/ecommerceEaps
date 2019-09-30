@@ -49,4 +49,8 @@ class User extends Model
             exit;
         }
     }
+
+    public static function logout(){
+        $_SESSION[User::SESSION] = null;
+    }
 }
