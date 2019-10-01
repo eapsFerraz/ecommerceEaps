@@ -14,14 +14,13 @@ class Model
 
         switch ($method){
             case "get":
-            $this->values[$fieldName];
+            return $this->values[$fieldName];
                 break;
 
             case "set":
-                $this->values["$fieldName"] = $arguments[0];
+                $this->values[$fieldName] = $arguments[0];
                 break;
         }
-
     }
 
     public function setData($data = array()){

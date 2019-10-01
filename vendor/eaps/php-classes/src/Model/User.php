@@ -21,6 +21,7 @@ class User extends Model
             throw new \Exception("Usuário inexistente ou senha inválida.");
         }
         $data = $results[0];
+
       if(password_verify($password, $data["despassword"]) === true)
       {
           $user = new User();
@@ -43,8 +44,6 @@ class User extends Model
             ||
             (bool)$_SESSION[User::SESSION]["inadmin"]!== $inadmin
         ){
-
-        }else{
             header("Location: /admin/login");
             exit;
         }
