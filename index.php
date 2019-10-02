@@ -45,8 +45,10 @@ $app->get('/admin/logout', function (){
 
 $app->get("/admin/users", function(){
     User::verifyLogin();
+
     // estou listando todos os ususarios do banco de dados
     $users = User::listAll();
+
     $page = new PageAdmin();
     $page->setTpl("users", array(
         "users"=>$users
@@ -57,6 +59,11 @@ $app->get("/admin/users/create", function(){
     User::verifyLogin();
     $page = new PageAdmin();
     $page->setTpl("users-create");
+});
+
+// excluir o usuario
+$app->post("/admin/users/:iduser/delete", function($iduser){
+    User::verifyLogin();
 });
 
 $app->get("/admin/users/:iduser", function($iduser){
@@ -75,10 +82,7 @@ $app->post("/admin/users/:iduser", function($iduser){
     User::verifyLogin();
 });
 
-// excluir o usuario
-$app->post("/admin/users/:iduser/delete", function($iduser){
-    User::verifyLogin();
-});
+
 
 
 
