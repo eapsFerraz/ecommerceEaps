@@ -45,11 +45,10 @@ $app->get('/admin/logout', function (){
 
 $app->get("/admin/users", function(){
     User::verifyLogin();
-    // estou listando todos os ususarios do banco de dados
+    // estou listando todos os usuarios do banco de dados
     $users = User::listAll();
-
+    //var_dump($users);
     $page = new PageAdmin();
-
     $page->setTpl("users", array(
         "users"=>$users
     ));
