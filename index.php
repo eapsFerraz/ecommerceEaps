@@ -53,6 +53,8 @@ $app->get("/admin/users", function(){
     $page->setTpl("users", array(
         "users"=>$users
     ));
+
+    $ferraz = "Alessandro Ferraz";
 });
 
 $app->get("/admin/users/create", function(){

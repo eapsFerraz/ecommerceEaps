@@ -35,9 +35,9 @@
                   </tr>
                 </thead>
                 <tbody>
-                {loop="$users"}
+                <!--{loop="$users"} -->
                   <tr>
-                    <td>{$value.iduser}</td>
+                    <td>{$ferraz}</td> <!-- {$value.iduser}-->
                     <td>{$value.desperson}</td>
                     <td>{$value.desemail}</td>
                     <td>{$value.deslogin}</td>
@@ -47,7 +47,7 @@
                       <a href="#" onclick="return confirm('Deseja realmente excluir este registro?')" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> Excluir</a>
                     </td>
                   </tr>
-                {/loop}
+                <!--{/loop}-->
                 </tbody>
               </table>
             </div>
