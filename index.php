@@ -49,9 +49,11 @@ $app->get("/admin/users", function(){
     $users = User::listAll();
     //var_dump($users);
     $page = new PageAdmin();
+
     $page->setTpl("users", array(
         "users"=>$users
     ));
+
 });
 
 $app->get("/admin/users/create", function(){

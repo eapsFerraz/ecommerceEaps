@@ -43,7 +43,7 @@
                       <td>{$value.desperson}</td>
                       <td>{$value.desemail}</td>
                       <td>{$value.deslogin}</td>
-                      <td>{if="$value.iduser == 1"}Sim{else}Não{/if}</td>
+                      <td>{if="$value.inadmin == 1"}Sim{else}Não{/if}</td>
                       <td>
                           <a href="/admin/users/{$value.iduser}" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> Editar</a>
                           <a href="/admin/users/{$value.iduser}/delete" onclick="return confirm('Deseja realmente excluir este registro?')"
