@@ -6,7 +6,7 @@ class Sql
 {
     const HOSTNAME  =   "scenfe.mysql.dbaas.com.br";
     const USERNAME  =   "scenfe";
-    const PASSWORD  =   "lemi2503";
+    const PASSWORD  =   "eaps!@#_scenfe";
     const DBNAME    =   "scenfe";
 
     private $conn;
